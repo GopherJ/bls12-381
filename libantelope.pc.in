@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libantelope
+Description: Pairing Library
+URL: https://github.com/cf/antelope-bls12-381
+Version: @PACKAGE_VERSION@
+Cflags: -I${includedir}
+Libs: -L${libdir} -lantelope
+Libs.private: @ANTELOPE_LIBS@
